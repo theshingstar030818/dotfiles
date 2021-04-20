@@ -1,10 +1,10 @@
 [core]
-	excludesfile = /home/bruce/.gitignore_global
+	excludesfile = /home/tanzeel/.gitignore_global
 [user]
-	name = Bruce Jackson
-	email = bjackson@pobox.com
+	name = Tanzeel Rehman
+	email = tanzeelrana@cmail.carleton.ca
 [commit]
-	template = /home/bruce/.stCommitMsg
+	template = /home/tanzeel/.stCommitMsg
 [alias]
 	pl = pull
 	br = branch

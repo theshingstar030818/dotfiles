@@ -270,7 +270,7 @@ if [[ ${SETUP} || ${SETUP_USER} ]]; then
     elif [[ ! -L ${HOME}/.gitconfig ]]; then
       ln -s ${PERSONAL_GITREPOS}/${DOTFILES}/.gitconfig_mac ${HOME}/.gitconfig
     fi
-    if [[ ${HOSTNAME} == "ratna" ]] || [[ ${HOSTNAME} == "bruce-work" ]]; then
+    if [[ ${HOSTNAME} == "ratna" ]] || [[ ${HOSTNAME} == "tanzeel-work" ]]; then
       if [[ ! -L ${HOME}/git-repos/cybernetiq/.gitconfig ]]; then
         ln -s ${PERSONAL_GITREPOS}/${DOTFILES}/.gitconfig_mac_cybernetiq ${HOME}/git-repos/cybernetiq/.gitconfig
       elif [[ ! -L ${HOME}/git-repos/gitlab/.gitconfig ]]; then
@@ -361,12 +361,12 @@ if [[ ${SETUP} || ${SETUP_USER} ]]; then
     ln -s ${PERSONAL_GITREPOS}/${DOTFILES}/.zshrc ${HOME}/.zshrc
   fi
 
-  echo "Linking custom bruce.zsh-theme"
-  if [[ ! -L ${HOME}/.oh-my-zsh/custom/themes/bruce.zsh-theme && -d ${HOME}/.oh-my-zsh/custom/themes ]]; then
-    ln -s ${PERSONAL_GITREPOS}/${DOTFILES}/bruce.zsh-theme ${HOME}/.oh-my-zsh/custom/themes/bruce.zsh-theme
+  echo "Linking custom tanzeel.zsh-theme"
+  if [[ ! -L ${HOME}/.oh-my-zsh/custom/themes/tanzeel.zsh-theme && -d ${HOME}/.oh-my-zsh/custom/themes ]]; then
+    ln -s ${PERSONAL_GITREPOS}/${DOTFILES}/tanzeel.zsh-theme ${HOME}/.oh-my-zsh/custom/themes/tanzeel.zsh-theme
   else
-    rm ${HOME}/.oh-my-zsh/custom/themes/bruce.zsh-theme
-    ln -s ${PERSONAL_GITREPOS}/${DOTFILES}/bruce.zsh-theme ${HOME}/.oh-my-zsh/custom/themes/bruce.zsh-theme
+    rm ${HOME}/.oh-my-zsh/custom/themes/tanzeel.zsh-theme
+    ln -s ${PERSONAL_GITREPOS}/${DOTFILES}/tanzeel.zsh-theme ${HOME}/.oh-my-zsh/custom/themes/tanzeel.zsh-theme
   fi
 
   if [[ ! -d ${HOME}/.ssh ]]; then
@@ -551,7 +551,7 @@ if [[ ${SETUP} || ${DEVELOPER} ]]; then
     if [[ ! -d "/Applications/Malwarebytes.app" ]]; then
       brew install --cask malwarebytes
     fi
-    if [[ ${HOSTNAME} == "ratna" ]] || [[ ${HOSTNAME} == "bruce-work" ]]; then
+    if [[ ${HOSTNAME} == "ratna" ]] || [[ ${HOSTNAME} == "tanzeel-work" ]]; then
       if [[ ! -d "/Applications/Microsoft\ Word.app" ]]; then
         brew install --cask microsoft-office
       fi

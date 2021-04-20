@@ -24,7 +24,7 @@ fi
 
 [[ $(uname -r) =~ microsoft ]] && export WINDOWS=1
 [[ $(hostname -s) = "ratna" ]] && export RATNA=1
-[[ $(hostname -s) = "bruce-work" ]] && export BRUCEWORK=1
+[[ $(hostname -s) = "tanzeel-work" ]] && export TANZEELWORK=1
 [[ $(hostname -s) = "workstation" ]] && export WORKSTATION=1
 [[ $(hostname -s) = "cruncher" ]] && export CRUNCHER=1
 
@@ -65,7 +65,7 @@ export ZSH=${HOME}/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="bruce"
+#ZSH_THEME="tanzeel"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -143,7 +143,7 @@ fi
 
 # for keychain ssh key management
 if [[ ${MACOS} ]]; then
-  if [[ ${RATNA} ]] || [[ ${BRUCEWORK} ]]; then
+  if [[ ${RATNA} ]] || [[ ${TANZEELWORK} ]]; then
     eval `/usr/local/bin/keychain --eval --agents ssh --inherit any id_rsa`
     eval `/usr/local/bin/keychain --eval --agents ssh --inherit any id_ed25519`
     eval `/usr/local/bin/keychain --eval --agents gpg B6DCFA4E5AFEA3AF35CE0A189A997C02283A9062 --inherit any`
@@ -205,35 +205,35 @@ if [[ ${LINUX} ]]; then
 fi
 
 # aliases for home
-alias home='ssh bruce@home.conecrazy.ca'
-alias bastion='ssh bruce@bastion.conecrazy.io'
-alias mac='ssh bruce@mac.conecrazy.io'
-alias server='ssh bruce@server.conecrazy.io'
-alias ratna='ssh bruce@ratna.conecrazy.io'
-alias bruce-work='ssh bruce@bruce-work.conecrazy.io'
-alias workstation='ssh bruce@workstation.conecrazy.io'
-alias kube-1='ssh bruce@kube-1.conecrazy.io'
-alias kube-2='ssh bruce@kube-2.conecrazy.io'
+alias home='ssh tanzeel@home.conecrazy.ca'
+alias bastion='ssh tanzeel@bastion.conecrazy.io'
+alias mac='ssh tanzeel@mac.conecrazy.io'
+alias server='ssh tanzeel@server.conecrazy.io'
+alias ratna='ssh tanzeel@ratna.conecrazy.io'
+alias tanzeel-work='ssh tanzeel@tanzeel-work.conecrazy.io'
+alias workstation='ssh tanzeel@workstation.conecrazy.io'
+alias kube-1='ssh tanzeel@kube-1.conecrazy.io'
+alias kube-2='ssh tanzeel@kube-2.conecrazy.io'
 alias vmware-0='ssh root@vmware-0.conecrazy.io'
 alias vmware-1='ssh root@vmware-1.conecrazy.io'
 alias vcenter='ssh root@vcenter.conecrazy.io'
-alias apt='ssh bruce@apt.conecrazy.io'
-alias bind-master='ssh bruce@bind-master.conecrazy.io'
-alias bind-slave='ssh bruce@bind-slave.conecrazy.io'
-alias rancher='ssh bruce@rancher.conecrazy.io'
-alias plex='ssh bruce@plex.conecrazy.io'
-alias jenkins='ssh bruce@jenkins.conecrazy.io'
-alias jenkins-agent='ssh bruce@jenkins-agent.conecrazy.io'
-alias nomad='ssh bruce@nomad.conecrazy.io'
-alias us-24='ssh bruce@us-24'
-alias us-16='ssh bruce@us-16'
-alias us-8-1='ssh bruce@us-8-1'
-alias us-8-2='ssh bruce@us-8-2'
-alias upstairs='ssh bruce@upstairs'
-alias downstairs='ssh bruce@downstairs'
-alias basement='ssh bruce@basement'
-alias backyard='ssh bruce@backyard'
-alias attic='ssh bruce@frontyard'
+alias apt='ssh tanzeel@apt.conecrazy.io'
+alias bind-master='ssh tanzeel@bind-master.conecrazy.io'
+alias bind-slave='ssh tanzeel@bind-slave.conecrazy.io'
+alias rancher='ssh tanzeel@rancher.conecrazy.io'
+alias plex='ssh tanzeel@plex.conecrazy.io'
+alias jenkins='ssh tanzeel@jenkins.conecrazy.io'
+alias jenkins-agent='ssh tanzeel@jenkins-agent.conecrazy.io'
+alias nomad='ssh tanzeel@nomad.conecrazy.io'
+alias us-24='ssh tanzeel@us-24'
+alias us-16='ssh tanzeel@us-16'
+alias us-8-1='ssh tanzeel@us-8-1'
+alias us-8-2='ssh tanzeel@us-8-2'
+alias upstairs='ssh tanzeel@upstairs'
+alias downstairs='ssh tanzeel@downstairs'
+alias basement='ssh tanzeel@basement'
+alias backyard='ssh tanzeel@backyard'
+alias attic='ssh tanzeel@frontyard'
 
 # aliases for work servers
 
